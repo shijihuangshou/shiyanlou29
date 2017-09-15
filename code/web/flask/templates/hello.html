@@ -1,0 +1,13 @@
+<!doctype html>
+<title>Hello from Flask</title>
+{% with message = get_flashed_messages() %}
+{% if message %}
+<h1>{{ message }}!</h1>
+{% endif %}
+{% endwith %}
+
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello World!</h1>
+{% endif %}
